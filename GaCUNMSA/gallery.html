@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - GaCUNMSA</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link href="assets/css/back-to-top.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="top-bar-info">
+                        <a href="tel:+233123456789"><i class="fas fa-phone-alt"></i> +233 123 456 789</a>
+                        <a href="mailto:info@gacunmsa.edu.gh"><i class="fas fa-envelope"></i> info@gacunmsa.edu.gh</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Garden City University" height="50" class="d-inline-block align-top me-2">
+                <img src="assets/images/uni-logo.jpg" alt="GaCUNMSA Logo" class="img-fluid" style="max-height: 60px;">
+            </a>
+            </a>
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+            
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programs.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(0, 100, 0, 0.85) 0%, rgba(0, 60, 0, 0.85) 100%), url('assets/images/66.jpg') center/cover no-repeat fixed;">
+        <div class="container">
+            <div class="hero-content">
+                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" class="hero-text-container">
+                    <h1 class="hero-title">Our Gallery</h1>
+                    <div class="hero-divider" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400"></div>
+                    <p class="lead">Capturing moments of learning, growth, and achievement in our nursing and midwifery journey</p>
+                </div>
+                <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                    </ol>
+                </nav>
+                <div class="scroll-indicator" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Animated Shapes -->
+        <div class="hero-shape hero-shape-1" data-aos="fade-right" data-aos-duration="1500"></div>
+        <div class="hero-shape hero-shape-2" data-aos="fade-left" data-aos-duration="1500"></div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5">
+        <div class="container">
+            <!-- Gallery Filters -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <div class="gallery-filters">
+                        <button class="btn btn-filter active" data-filter="all">All</button>
+                        <button class="btn btn-filter" data-filter="events">Events</button>
+                        <button class="btn btn-filter" data-filter="activities">Activities</button>
+                        <button class="btn btn-filter" data-filter="workshops">Workshops</button>
+                        <button class="btn btn-filter" data-filter="awards">Awards</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="row g-4 gallery-grid">
+                <!-- Gallery items will be loaded dynamically via JavaScript -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <button id="load-more" class="btn btn-accent">Load More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <!-- About Column -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-about">
+                        <div class="footer-logo mb-3">
+                            <img src="assets/images/logo.png" alt="Garden City University" class="img-fluid" style="max-height: 60px;">
+                            <div class="mt-2">
+                                <img src="assets/images/logo.png" alt="GaCUNMSA" class="img-fluid" style="max-height: 40px; margin-top: 10px;">
+                            </div>
+                        </div>
+                        <p class="text-light">Empowering future healthcare leaders through excellence in nursing and midwifery education at Garden City University College.</p>
+                        <div class="social-links mt-4">
+                            <a href="#" class="me-3 text-white" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="me-3 text-white" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="me-3 text-white" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="me-3 text-white" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-white" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="programs.html" class="text-light text-decoration-none">Programs</a></li>
+                        <li class="mb-2"><a href="events.html" class="text-light text-decoration-none">Events</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-light text-decoration-none">Gallery</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Programs Column -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-4">Our Programs</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="programs.html#nursing" class="text-light text-decoration-none">BSc Nursing</a></li>
+                        <li class="mb-2"><a href="programs.html#midwifery" class="text-light text-decoration-none">BSc Midwifery</a></li>
+                        <li class="mb-2"><a href="programs.html#public-health" class="text-light text-decoration-none">Public Health Nursing</a></li>
+                        <li><a href="programs.html#post-basic" class="text-light text-decoration-none">Post Basic Programs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-4">Contact Info</h5>
+                    <ul class="list-unstyled contact-info">
+                        <li class="mb-3">
+                            <div class="d-flex">
+                                <i class="fas fa-map-marker-alt mt-1 me-3 text-primary"></i>
+                                <span class="text-light">Garden City University College,<br>Kumasi, Ghana</span>
+                            </div>
+                        </li>
+                        <li class="mb-3">
+                            <div class="d-flex">
+                                <i class="fas fa-phone-alt mt-1 me-3 text-primary"></i>
+                                <a href="tel:+233123456789" class="text-light text-decoration-none">+233 12 345 6789</a>
+                            </div>
+                        </li>
+                        <li class="mb-3">
+                            <div class="d-flex">
+                                <i class="fas fa-envelope mt-1 me-3 text-primary"></i>
+                                <a href="mailto:info@gacunmsa.edu.gh" class="text-light text-decoration-none">info@gacunmsa.edu.gh</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex">
+                                <i class="fas fa-clock mt-1 me-3 text-primary"></i>
+                                <span class="text-light">Mon - Fri: 8:00 AM - 5:00 PM</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="footer-bottom border-top border-secondary pt-4 mt-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <p class="mb-0 text-center text-md-start text-light">
+                            &copy; <span id="current-year">2025</span> GaCUNMSA. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0">
+                            Designed with <i class="fas fa-heart text-danger"></i> by 
+                            <a href="https://earldev.tech" target="_blank" class="text-decoration-none text-primary">EarlDev Technologies</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/back-to-top.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+        
+        // Update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

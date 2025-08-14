@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Test</title>
+    <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .image-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .success {
+            color: green;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Loading Test</h1>
+    <div class="image-grid" id="imageGrid">
+        <!-- Images will be inserted here by JavaScript -->
+    </div>
+
+    <script>
+        const images = [
+            'assets/images/1.jpg',
+            'assets/images/2.jpg',
+            'assets/images/3.jpg',
+            'assets/images/4.jpg',
+            'assets/images/5.jpg',
+            'assets/images/6.jpg',
+            'assets/images/7.jpg',
+            'assets/images/8.jpg',
+            'assets/images/9.jpg',
+            'assets/images/22.jpg',
+            'assets/images/33.jpg',
+            'assets/images/44.jpg',
+            'assets/images/66.jpg'
+        ];
+
+        const imageGrid = document.getElementById('imageGrid');
+
+        images.forEach(imagePath => {
+            const container = document.createElement('div');
+            container.className = 'image-container';
+            
+            const img = new Image();
+            img.onload = function() {
+                container.innerHTML += `<div class="success">✓ Loaded</div>`;
+            };
+            img.onerror = function() {
+                container.innerHTML += `<div class="error">✗ Error loading</div>`;
+            };
+            
+            container.innerHTML = `<div>${imagePath}</div>`;
+            img.src = imagePath;
+            container.appendChild(img);
+            
+            imageGrid.appendChild(container);
+        });
+    </script>
+</body>
+</html>
